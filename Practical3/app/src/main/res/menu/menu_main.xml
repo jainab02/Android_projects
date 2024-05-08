@@ -1,0 +1,52 @@
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:context="com.example.practical3.MainActivity">-->
+<!--&lt;!&ndash;    <item&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/action_settings"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orderInCategory="100"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:title="@string/action_settings"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:showAsAction="never" />&ndash;&gt;-->
+
+<!--    <item android:title="Item1"-->
+<!--        android:id="@+id/item1"/>-->
+<!--    <item android:title="Item2"-->
+<!--        android:id="@+id/item2"/>-->
+<!--    <item android:title="Item3"-->
+<!--        android:id="@+id/item4"/>-->
+<!--</menu>-->
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_icon"
+        android:title="Item 1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Item 2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="Item 3"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/subitem1"
+                android:title="Sub Item 1" />
+
+            <item
+                android:id="@+id/subitem2"
+                android:title="Sub Item 2" />
+
+        </menu>
+
+    </item>
+
+</menu>
